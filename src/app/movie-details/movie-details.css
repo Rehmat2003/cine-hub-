@@ -1,0 +1,38 @@
+.details-page{
+  min-height:100vh;
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)
+  ),
+  url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1974');
+
+  background-size:cover;
+  background-position:center;
+}
+
+.movie-img{
+  height:500px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(255,255,255,0.2);
+}
+
+.movie-title{
+  font-size:60px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.movie-desc{
+  font-size:20px;
+  color:#ddd;
+  line-height:1.8;
+}
+
+button{
+  padding:12px 35px;
+  font-size:20px;
+  border:none;
+  border-radius:10px;
+}

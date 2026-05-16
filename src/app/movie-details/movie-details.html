@@ -1,0 +1,48 @@
+<div class="details-page">
+
+  <div class="container py-5">
+
+    <div class="row align-items-center">
+
+      <div class="col-md-5">
+
+        <img
+          [src]="movie.image"
+          class="movie-img w-100"
+        >
+
+      </div>
+
+      <div class="col-md-7 text-white">
+
+        <h1 class="movie-title">
+          {{movie.title}}
+        </h1>
+
+        <h4 class="mb-3">
+          Language : {{movie.language}}
+        </h4>
+
+        <p class="movie-desc">
+
+          Experience the biggest blockbuster
+          movie in theatres with stunning visuals,
+          action and cinematic experience.
+
+        </p>
+
+        <button
+          class="btn btn-danger btn-lg mt-3"
+          (click)="bookNow()">
+
+          🎟 Book Tickets
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

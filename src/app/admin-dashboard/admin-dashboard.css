@@ -1,0 +1,15 @@
+.dashboard{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  margin-top:100px;
+}
+
+.box{
+  width:250px;
+  padding:30px;
+  background:#222;
+  color:white;
+  text-align:center;
+  border-radius:10px;
+}

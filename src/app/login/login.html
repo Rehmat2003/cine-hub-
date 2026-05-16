@@ -1,0 +1,63 @@
+<div class="login-page">
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div class="row align-items-center vh-100">
+
+      <div class="col-md-6 text-section">
+
+        <h1>
+          🎬 CineReserve
+        </h1>
+
+        <p>
+          Book your favorite movies with seamless cinema experience.
+        </p>
+
+        <div class="genres">
+
+          <span>IMAX</span>
+          <span>3D</span>
+          <span>Dolby Atmos</span>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 offset-md-1">
+
+        <div class="login-card">
+
+          <h2>Welcome Back 🍿</h2>
+
+          <p>Login to continue your journey</p>
+
+          <input
+            type="email"
+            class="form-control mb-3"
+            placeholder="Email"
+            [(ngModel)]="email">
+
+          <input
+            type="password"
+            class="form-control mb-3"
+            placeholder="Password"
+            [(ngModel)]="password">
+
+          <button
+            class="btn login-btn w-100"
+            (click)="login()">
+            Login Now
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

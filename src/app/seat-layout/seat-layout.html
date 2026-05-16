@@ -1,0 +1,86 @@
+<div class="seat-page">
+
+  <div class="container py-5">
+
+    <h1 class="text-center text-white mb-5">
+      🎟 Select Seats & Payment
+    </h1>
+
+    <div class="row">
+
+      <!-- SEATS -->
+
+      <div class="col-md-8">
+
+        <div class="seats-container">
+
+          <div
+            class="seat"
+            *ngFor="let seat of seats"
+            [class.selected]="seat.booked"
+            (click)="selectSeat(seat)">
+
+            {{seat.number}}
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PAYMENT -->
+
+      <div class="col-md-4">
+
+        <div class="payment-box">
+
+          <h3>Booking Summary</h3>
+
+          <hr>
+
+          <p>
+            Selected Seats:
+          </p>
+
+          <div class="seat-list">
+
+            <span
+              class="badge bg-danger me-2"
+              *ngFor="let s of selectedSeats">
+
+              {{s}}
+
+            </span>
+
+          </div>
+
+          <h4 class="mt-4">
+            Total :
+            ₹ {{selectedSeats.length * 250}}
+          </h4>
+
+          <div class="qr-section text-center mt-4">
+             <img
+             src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=MovieBookingPayment"
+             class="qr-image"
+             alt="QR Code">
+             
+             <p class="text-white mt-3">
+                Scan & Pay with UPI
+            </p>
+        </div>
+
+          <button 
+          (click)="payAndBook()">
+          Pay & Book
+        </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
